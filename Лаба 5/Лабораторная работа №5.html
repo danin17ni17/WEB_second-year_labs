@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Example</title>
+</head>
+<body>
+    <ul id="myList"></ul>
+    <script>
+        var myList = document.getElementById('myList');
+        var items = ['Этот фиолетовый текст', 'Этот зелёный текст', '', '', ''];
+        var i = 0;
+        for (var item of items) {
+            var listItem = document.createElement('li');
+            if (i == 0) {
+                listItem.style.color = "purple";
+            } else if (i == 1) {
+                listItem.style.color = "green";
+            } else if (i == 2) {
+                var dothis = new Date();
+                var month = dothis.getMonth();
+                month = (month * 1) + 1;
+                var day = dothis.getDate();
+                var year = dothis.getFullYear();
+                var formattedDate = day + '/' + month + '/' + year;
+                listItem.appendChild(document.createTextNode(formattedDate));
+            } else if (i == 3) {
+                listItem.appendChild(document.createTextNode("Привет! Сегодня: "));
+                listItem.style.color = "blue";
+                var dothis = new Date();
+                var month = dothis.getMonth();
+                month = (month * 1) + 1;
+                var day = dothis.getDate();
+                var year = dothis.getFullYear();
+                var formattedDate = day + '/' + month + '/' + year;
+                listItem.appendChild(document.createTextNode(formattedDate));
+                listItem.appendChild(document.createTextNode(" Скрипт написал: Таболкин Даниил."));
+            } else if (i == 4) {
+                var d = new Date();
+                var y = d.getFullYear();
+                var da = d.getDate();
+                var m = d.getMonth() + 1;
+                listItem.appendChild(document.createTextNode("Сегодня " + da + " день " + m + " месяца " + y + " года"));
+            }
+            listItem.appendChild(document.createTextNode(item));
+            myList.appendChild(listItem);
+            i++;
+        }
+        var time = prompt("Сколько сейчас времени?");
+        document.title = "Сейчас: " + time;
+        var favoriteColor = prompt("Какой ваш любимый цвет?");
+        var favoriteDish = prompt("Какое ваше любимое блюдо?");
+        var favoriteSeason = prompt("Какое ваше любимое время года?");
+        document.write("<table border=0>");
+        document.write("<tr BGCOLOR=#0f6fc6><th>Любимый цвет</th><th>Любимое блюдо</th><th>Любимое время года</th></tr>");
+        document.write("<tr BGCOLOR=#ccd5ea><td>" + favoriteColor + "</td><td>" + favoriteDish + "</td><td>" + favoriteSeason + "</td></tr>");
+    </script>
+</body>
+</html>

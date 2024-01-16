@@ -1,0 +1,53 @@
+﻿BODY {
+    background-color: #f5c9c9;
+    font-family: "New Century Schoolbook","Century Gothic";
+    font-weight: normal;
+    font-style: normal color:black;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left text-transform:capitalize;
+    color: black;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: right;
+    text-transform: capitalize;
+    color: green;
+}
+
+.price2 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: right;
+    text-transform: capitalize;
+    color: red;
+}
+
+.style {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    list-style: circle;
+    color: black;
+}
+
+.style2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    list-style: upper-roman;
+    color: black;
+}
+
+TABLE {
+    BORDER: 1px;
+    Padding: 5px;
+    border-color: #1f2529;
+    border-style: double;
+    margin-left: 6%;
+}

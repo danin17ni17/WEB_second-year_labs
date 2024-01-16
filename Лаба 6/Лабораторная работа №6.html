@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Опрос</title>
+    <script>
+        function showAlert() {
+            alert("Спасибо за участие в опросе!");
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="name">Впишите свое имя:</label><br>
+        <input type="text" id="name" name="name" onfocus="this.value=''"><br>
+        <p>Что вам больше нравится, мороженое или шоколад?</p>
+        <input type="checkbox" id="icecream" name="icecream" value="Ice cream">
+        <label for="icecream">Мороженое</label><br>
+        <input type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
+        <label for="chocolate">Шоколад</label><br>
+        <input type="submit" value="Отправить" onclick="showAlert()">
+    </form>
+</body>
+</html>
